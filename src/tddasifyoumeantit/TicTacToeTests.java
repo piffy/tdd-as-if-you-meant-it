@@ -9,7 +9,9 @@ public class TicTacToeTests {
     @Test
     public void
     beginHere() {
-        fail("type something");
+        fail("Per prima cosa decidi come rappresentare il dominio:" +
+                "\nmosse, scacchiera, giocatori.\n" +
+                "Poi crea la prima classe e il primo test.");
     }
 
 }
