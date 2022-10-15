@@ -1,4 +1,13 @@
 public class TicTacToe {
+    public static int status=1;
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void move(String b2X) {
+        if (status==1) status=2;
+    }
     /* Una Mossa è una tripletta lettera-numero-segno */
     /* La partita inizia con il giocatore 1, segno X */
     /* Uno status è uno dei seguenti:
