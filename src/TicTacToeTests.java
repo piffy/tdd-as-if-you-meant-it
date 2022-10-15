@@ -31,4 +31,13 @@ public class TicTacToeTests {
         assertEquals(0,game.getStatus());
     }
 
+    @Test
+    public void secondMoveOverlapSymbol() {
+        TicTacToe game= new TicTacToe();
+        game.move("B2X");
+        game.move("B2O");
+        assertEquals(0,game.getStatus());
+    }
+
+
 }
