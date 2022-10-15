@@ -39,5 +39,18 @@ public class TicTacToeTests {
         assertEquals(0,game.getStatus());
     }
 
+    @Test
+    public void XwinsRow() {
+        TicTacToe game= new TicTacToe();
+        game.move("B2X");
+        game.move("B1O");
+        game.move("A2X");
+        game.move("A1O");
+        assertEquals(1,game.getStatus());
+        game.move("C2X");
+        assertEquals(3,game.getStatus());
+    }
+
+
 
 }
