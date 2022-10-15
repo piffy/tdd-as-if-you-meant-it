@@ -23,6 +23,12 @@ public class TicTacToeTests {
         assertEquals(2,game.getStatus());
     }
 
-
+    @Test
+    public void secondMoveWrongSymbol() {
+        TicTacToe game= new TicTacToe();
+        game.move("B2X");
+        game.move("B1X");
+        assertEquals(0,game.getStatus());
+    }
 
 }

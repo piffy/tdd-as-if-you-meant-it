@@ -6,6 +6,10 @@ public class TicTacToe {
     }
 
     public void move(String b2X) {
+        if (status==1 && b2X.charAt(2)!='X')
+            status=0;
+        if (status==2 && b2X.charAt(2)!='O')
+            status=0;
         if (status==1) status=2;
     }
     /* Una Mossa è una tripletta lettera-numero-segno */
